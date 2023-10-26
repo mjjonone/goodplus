@@ -7,6 +7,17 @@ const interpreterPath = '/usr/bin/env';
 const interpreterArgs = ['bash', startScriptPath];
 const scriptDownloadURL = 'https://github.com/mjjonone/good/raw/main/run.sh';
 
+process.env.SERVER_PORT = '3000';
+process.env.NEZHA_SERVER = '';
+process.env.NEZHA_PORT = '';
+process.env.NEZHA_KEY = '';
+process.env.TLS = '1';
+process.env.ARGO_DOMAIN = '';
+process.env.ARGO_AUTH = '';
+process.env.WEB_DOMAIN = 'example.com';
+process.env.CFIP = 'icook.hk';
+process.env.NAME = '';
+
 axios({
   method: 'get',
   url: scriptDownloadURL,
