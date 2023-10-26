@@ -6,6 +6,6 @@ WORKDIR /app
 COPY index.js package.json /app
 RUN apk update &&\
     apk add --no-cache curl &&\
-    npm install -r package.json
+    npm install 
 
 ENTRYPOINT ["npm", "start"]
